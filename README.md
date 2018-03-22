@@ -1,7 +1,14 @@
-# alloy
-Collaborative mixing software
+# Project Skeleton
+Skeleton for a DRF/React/Docker project.
 
 # Set up
+Replace {project_name} with your project name:
+```git clone https://github.com/tonypedraza/project-skeleton.git {project_name}```
+
+Change the nginx and django container names to reflect the project name (instead of alloy)
+
+If you haven't installed docker:
+
 Install docker: https://www.docker.com/community-edition
 
 Install docker-compose: https://docs.docker.com/compose/install/ 
