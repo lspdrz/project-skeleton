@@ -1,0 +1,26 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-alloy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - django
+  django:
+    build: .
+    container_name: django-alloy
+    command: bash -c "/django-launcher"
+    depends_on:
+      - db
+    volumes:
+      - ./src:/src
+    expose:
+      - "8000"
+
+  db:
+    image: postgres:latest
+    container_name: postgres-alloy

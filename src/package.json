@@ -1,0 +1,36 @@
+{
+  "name": "alloy",
+  "version": "1.0.0",
+  "repository": "https://github.com/tonypedraza/alloy",
+  "description": "Collaborative mixing software",
+  "author": "Luis Pedraza luispedraza@utexas.edu Kevin Avila kevin.avila@utexas.edu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.26.4",
+    "webpack": "^2.0.12",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^0.9.0",
+    "jquery": "^3.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.7",
+    "webpack-bundle-tracker": "0.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.1",
+    "node-sass": "^4.5.3",
+    "react-router-dom": "^4.2.2"
+  }
+}

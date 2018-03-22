@@ -1,0 +1,12 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alloy</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <p>Welcome to alloy</p>
+        {% render_bundle 'main' %}
+    </body>
+</html>
